@@ -64,7 +64,7 @@
 
     PageOptions.prototype.setMaxPages = function(maxPages) {
       if (maxPages == null) {
-        maxPages = Infinity;
+        maxPages = false;
       }
       return this.maxPages = maxPages;
     };

@@ -41,7 +41,7 @@ class PageOptions
 
   get: (field) -> @fields[field]
 
-  setMaxPages: (maxPages=Infinity) -> @maxPages = maxPages
+  setMaxPages: (maxPages=false) -> @maxPages = maxPages
 
   isMaxPage: () -> if @fields.page is @maxPages then true else false
 
