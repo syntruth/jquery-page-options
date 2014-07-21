@@ -14,7 +14,8 @@ is returned from the `#data` method.
 Example:
 
     pageOpts = new PageOptions({
-      for_tag: false
+      for_tag: false,
+      for_user: false
     })
 
     pageOpts.data() // => {page: 1, per_page: 15}
@@ -28,10 +29,6 @@ Example:
     pageOpts.data() // => {page: 2, per_page: 15, for_tag: 'test'}
 
     pageOpts.set_per_page(20)
-
-    pageOpts.data() // => {page: 2, per_page: 20, for_tag: 'test'}
-
-    pageOpts.update({for_user: false})
 
     pageOpts.data() // => {page: 2, per_page: 20, for_tag: 'test'}
 
